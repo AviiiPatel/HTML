@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Italianno&family=Marck+Script&display=swap"
+        rel="stylesheet">">
+    <style>
+        .container {
+            width: 1500px;
+            border: 3px solid rgb(136, 6, 138);
+            border-radius: 10px;
+            margin: 30px auto;
+
+        }
+
+        .item {
+            border: 3px solid black;
+            margin: 10px;
+            padding: 7px;
+            background-color: rgb(170, 223, 184);
+            border-radius: 10px;
+            font-size: 25px;
+        }
+
+        body {
+            font-family: 'Caveat', cursive;
+            font-family: 'Italianno', cursive;
+            font-family: 'Marck Script', cursive;
+
+        }
+
+        p {
+            text-align: justify;
+
+        }
+
+        #fruit {
+            float: left;
+            width: 47%;
+
+        }
+
+        #computer {
+            float: left;
+            width: 47%;
+
+        }
+
+        #stationary {
+            /* clear: left;
+            clear: right; */
+            /* here you can use only one at a time either left or right which is taken second is consider here */
+            clear: both;
+            width: 97%;
+        }
+
+        #glass {
+            width: 97%;
+        }
+
+        h1 {
+            color: blue;
+            font-size: 40px;
+            margin: auto;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store.</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus ab officiis veritatis alias?
+                Laboriosam facilis sit, dolore perferendis alias ullam? Velit culpa consequuntur doloribus, eos incidunt
+                recusandae blanditiis ad ex commodi ipsa illo corporis, voluptate vero, aspernatur rerum assumenda est
+                pariatur exercitationem vitae debitis atque repudiandae placeat dolorum. Fugit.</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus ab officiis veritatis alias?
+                Laboriosam facilis sit, dolore perferendis alias ullam? Velit culpa consequuntur doloribus, eos incidunt
+                recusandae blanditiis ad ex commodi ipsa illo corporis, voluptate vero, aspernatur rerum assumenda est
+                pariatur exercitationem vitae debitis atque repudiandae placeat dolorum. Fugit.</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus ab officiis veritatis alias?
+                Laboriosam facilis sit, dolore perferendis alias ullam? Velit culpa consequuntur doloribus, eos incidunt
+                recusandae blanditiis ad ex commodi ipsa illo corporis, voluptate vero, aspernatur rerum assumenda est
+                pariatur exercitationem vitae debitis atque repudiandae placeat dolorum. Fugit.</p>
+        </div>
+
+        <div id="glass" class="item">
+            <h3>Glass</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus ab officiis veritatis alias?
+                Laboriosam facilis sit, dolore perferendis alias ullam? Velit culpa consequuntur doloribus, eos incidunt
+                recusandae blanditiis ad ex commodi ipsa illo corporis, voluptate vero, aspernatur rerum assumenda est
+                pariatur exercitationem vitae debitis atque repudiandae placeat dolorum. Fugit.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

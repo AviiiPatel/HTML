@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Events</title>
+
+    <style>
+        #btn {
+            background-color: rgb(194, 193, 193);
+            color: black;
+            font: 400;
+            font-size: 15px;
+            padding: 2px 5px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1.6px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Browser Events
+    click
+    contextmenu
+    mouseover/ mouseout
+    mousedown/ mouseup
+    mousemove
+
+    submit
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+
+    <div class="container">
+        <h3>This is lio messi</h3>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ab numquam ex reiciendis fuga
+            dolorum, illo magni harum quo, odit perferendis? Cupiditate tempora culpa, eaque quia eius cum unde nostrum
+            incidunt iure. Delectus!lorem33 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quod nihil
+            consectetur dolore doloribus eligendi tempore assumenda unde nam rem. Nobis quam aperiam accusamus iste.
+            Ipsam tempore perferendis numquam fugit quod vitae magnam? Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Doloribus nemo quam quidem ut necessitatibus? Asperiores minima, laboriosam eos
+            praesentium voluptas officia. Recusandae doloremque distinctio obcaecati minima quod aliquam eaque dolores
+            laborum, impedit in.</p>
+    </div>
+
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        let para = document.getElementById("para");
+        para.addEventListener("mouseover", function run(){
+            console.log("mouse is inside")
+        })
+
+        para.addEventListener("mouseout", function run(){
+            console.log("mouse went outside")
+        })
+
+
+
+        function toggleHide() {
+            // let btn = document.getElementById("btn");
+            let para = document.getElementById("para");
+
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+
+            else {
+                para.style.display = 'block';
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

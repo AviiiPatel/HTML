@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer';
+    }
+
+    .item{
+        border: 2px solid black;
+        background-color: rgb(255, 226, 206);
+    }
+
+    
+
+    #navbar{
+            grid-area: navbar;
+    }
+
+    #section{
+        grid-area: section;
+    }
+
+    #aside{
+        grid-area: aside;
+    }
+
+    footer{
+        grid-area: footer;
+    } 
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home &nbsp;&nbsp;&nbsp; About Us &nbsp;&nbsp;&nbsp; Contact Us
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, laudantium modi, provident ab suscipit inventore neque velit ipsa saepe expedita, optio corporis? Voluptatem tenetur, eius deserunt maxime repellat est ratione quibusdam illum dignissimos!</div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptas at explicabo magnam voluptatibus temporibus provident praesentium commodi et ea fugit consectetur iusto, alias delectus inventore nihil, sunt eius deserunt accusamus quos assumenda.
+        </div>
+        <footer class="item">Thsi is my Footer.</footer>
+    </div>
+</body>
+</html>
